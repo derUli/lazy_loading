@@ -1,0 +1,13 @@
+{
+	"source" : "extend",
+	"id": "lazy_loading",
+	"version": "1.0.0",
+	"description": "",
+	"categories": [
+		"lazy_loading",
+		"images",
+		"performance"
+	],
+	"compatible_from": "2019.1.4",
+	"dependencies": []
+}

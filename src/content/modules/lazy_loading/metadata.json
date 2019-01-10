@@ -1,5 +1,5 @@
 {
-	"version": "1.7.9",
+	"version": "1.0.0",
 	"embed": false,
 	"controllers": {
 		"LazyLoadingController": "controllers/LazyLoadingController.php"
