@@ -2,7 +2,7 @@
 	"source" : "extend",
 	"id": "lazy_loading",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Lazy Loading for Images and IFrames",
 	"categories": [
 		"lazy_loading",
 		"images",
