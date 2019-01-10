@@ -17,10 +17,12 @@ class LazyLoadingController extends MainClass
     public function frontendFooter()
     {
         $js1 = ModuleHelper::buildRessourcePath(self::MODULE_NAME, "js/jquery.lazy.js");
-        $js2 = ModuleHelper::buildRessourcePath(self::MODULE_NAME, "js/apply-lazy-loading.js");
+        $js2 = ModuleHelper::buildRessourcePath(self::MODULE_NAME, "js/jquery.lazy.iframe.js");
+        $js3 = ModuleHelper::buildRessourcePath(self::MODULE_NAME, "js/apply-lazy-loading.js");
         
         enqueueScriptFile($js1);
         enqueueScriptFile($js2);
+        enqueueScriptFile($js3);
         
         combinedScriptHtml();
     }
@@ -79,6 +81,8 @@ class LazyLoadingController extends MainClass
             $node->setAttribute('data-src', $oldsrc);
             $newsrc = '';
             $node->setAttribute('src', $newsrc);
+
+            $node->setAttribute('data-lazy', "true");
             
             $classes = $node->getAttribute('class');
             $newclasses = $classes . ' lazy lazy-hidden';

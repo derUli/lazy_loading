@@ -1,3 +1,3 @@
 $(function() {
-	$('img[data-lazy]').lazy();
+	$('img[data-lazy], iframe[data-lazy]').lazy();
 });
